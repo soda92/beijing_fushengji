@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DualListDemo", "DualListDemo.vcxproj", "{74A1E5D6-0B3E-4A4E-BC28-38453509ABB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74A1E5D6-0B3E-4A4E-BC28-38453509ABB3}.Debug|x86.ActiveCfg = Debug|Win32
+		{74A1E5D6-0B3E-4A4E-BC28-38453509ABB3}.Debug|x86.Build.0 = Debug|Win32
+		{74A1E5D6-0B3E-4A4E-BC28-38453509ABB3}.Release|x86.ActiveCfg = Release|Win32
+		{74A1E5D6-0B3E-4A4E-BC28-38453509ABB3}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A880E56A-BAC6-4BA4-AF69-3219F4E70455}
+	EndGlobalSection
+EndGlobal

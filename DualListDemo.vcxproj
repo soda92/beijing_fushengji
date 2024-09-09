@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{74A1E5D6-0B3E-4A4E-BC28-38453509ABB3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DualListDemo</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release</OutDir>
+    <IntDir>Release</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug</OutDir>
+    <IntDir>Debug</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;_AFXDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;_AFXDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include=".\BankJiaoyi.cpp" />
+    <ClCompile Include=".\BeijingIntroDlg.cpp" />
+    <ClCompile Include=".\BitmapPicture.cpp" />
+    <ClCompile Include=".\BossComeDlg.cpp" />
+    <ClCompile Include=".\BtnST.cpp" />
+    <ClCompile Include=".\BuyDlg.cpp" />
+    <ClCompile Include=".\Curvefit.cpp" />
+    <ClCompile Include=".\Digistring.cpp" />
+    <ClCompile Include=".\DualListDemo.cpp" />
+    <ClCompile Include=".\DualListDemoDlg.cpp" />
+    <ClCompile Include=".\EnterBank.cpp" />
+    <ClCompile Include=".\Hispital.cpp" />
+    <ClCompile Include=".\HouseDlg.cpp" />
+    <ClCompile Include=".\HyperLink.cpp" />
+    <ClCompile Include=".\ListCtrlSortClass.cpp" />
+    <ClCompile Include=".\NetworkClub.cpp" />
+    <ClCompile Include=".\NewsDlg.cpp" />
+    <ClCompile Include=".\PostMoneyDlg.cpp" />
+    <ClCompile Include=".\ReplayLoad.cpp" />
+    <ClCompile Include=".\RichTop10.cpp" />
+    <ClCompile Include=".\RijiDlg.cpp" />
+    <ClCompile Include=".\SelectionDlg.cpp" />
+    <ClCompile Include=".\SellDlg.cpp" />
+    <ClCompile Include=".\SetUpGame.cpp" />
+    <ClCompile Include=".\ShengmingDlg.cpp" />
+    <ClCompile Include=".\StaticCounter.cpp" />
+    <ClCompile Include=".\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include=".\StoryDlg.cpp" />
+    <ClCompile Include=".\Ticker.cpp" />
+    <ClCompile Include=".\TipDlg.cpp" />
+    <ClCompile Include=".\TopPlayerDlg.cpp" />
+    <ClCompile Include=".\Wangba.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".\res\DualListDemo.rc2" />
+    <None Include=".\res\html_source.html.htm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include=".\BankJiaoyi.h" />
+    <ClInclude Include=".\BeijingIntroDlg.h" />
+    <ClInclude Include=".\BossComeDlg.h" />
+    <ClInclude Include=".\BuyDlg.h" />
+    <ClInclude Include=".\DualListDemo.h" />
+    <ClInclude Include=".\DualListDemoDlg.h" />
+    <ClInclude Include=".\EnterBank.h" />
+    <ClInclude Include=".\Hispital.h" />
+    <ClInclude Include=".\HouseDlg.h" />
+    <ClInclude Include=".\ListCtrlSortClass.h" />
+    <ClInclude Include=".\NetworkClub.h" />
+    <ClInclude Include=".\NewsDlg.h" />
+    <ClInclude Include=".\PostMoneyDlg.h" />
+    <ClInclude Include=".\ReplayLoad.h" />
+    <ClInclude Include=".\Resource.h" />
+    <ClInclude Include=".\RichTop10.h" />
+    <ClInclude Include=".\RijiDlg.h" />
+    <ClInclude Include=".\SelectionDlg.h" />
+    <ClInclude Include=".\SetUpGame.h" />
+    <ClInclude Include=".\ShengmingDlg.h" />
+    <ClInclude Include=".\StdAfx.h" />
+    <ClInclude Include=".\StoryDlg.h" />
+    <ClInclude Include=".\TopPlayerDlg.h" />
+    <ClInclude Include=".\Wangba.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\DualListDemo.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include=".\res\32x32x256_Hand.ico" />
+    <Image Include=".\res\32x32x256_Lamp.ico" />
+    <Image Include=".\res\bg.bmp" />
+    <Image Include=".\res\cover.bmp" />
+    <Image Include=".\res\DualListDemo.ico" />
+    <Image Include=".\email.bmp" />
+    <Image Include=".\res\game1.bmp" />
+    <Image Include=".\res\hand3.ico" />
+    <Image Include=".\res\hand4.ico" />
+    <Image Include=".\res\hand5.ico" />
+    <Image Include=".\res\hand6.ico" />
+    <Image Include=".\res\hand7.ico" />
+    <Image Include=".\res\hand8.ico" />
+    <Image Include=".\res\hand9.ico" />
+    <Image Include=".\res\ico00001.ico" />
+    <Image Include=".\res\ico00002.ico" />
+    <Image Include=".\res\ico00003.ico" />
+    <Image Include=".\res\icon1.ico" />
+    <Image Include=".\res\litebulb.bmp" />
+    <Image Include=".\res\logo.bmp" />
+    <Image Include=".\res\mid1.bmp" />
+    <Image Include=".\res\mid2.bmp" />
+    <Image Include=".\res\mid3.bmp" />
+    <Image Include=".\res\mid4.bmp" />
+    <Image Include=".\news.bmp" />
+    <Image Include=".\riji.bmp" />
+    <Image Include=".\res\subway.bmp" />
+    <Image Include=".\res\tickerbkg2.bmp" />
+    <Image Include=".\res\TickerDragBar.bmp" />
+    <Image Include=".\res\top1.bmp" />
+    <Image Include=".\res\top2.bmp" />
+    <Image Include=".\res\top3.bmp" />
+    <Image Include=".\res\top4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include=".\ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
