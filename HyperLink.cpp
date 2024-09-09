@@ -61,7 +61,9 @@ BEGIN_MESSAGE_MAP(CHyperLink, CStatic)
 	ON_WM_SETFOCUS()
 	ON_WM_KILLFOCUS()
 	ON_WM_KEYDOWN()
-	ON_WM_NCHITTEST()
+{
+	0x0084, 0, 0, 0, AfxSig_l_p, (AFX_PMSG)(AFX_PMSGW)(reinterpret_cast< LRESULT(CWnd::*)(CPoint) > (&ThisClass::OnNcHitTest))
+},
 	ON_WM_LBUTTONDOWN()	
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()

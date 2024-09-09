@@ -785,6 +785,7 @@ void CSelectionDlg::MoveListItems(CListCtrl & pFromList, CListCtrl & pToList)
 				break;
 			}
 		}
+		int i = m_list2.GetItemCount();
 		//find, the displayed price shoud be avarage of old and new
         if(right_has==1)  
 		{
@@ -843,6 +844,7 @@ void CSelectionDlg::MoveListItems(CListCtrl & pFromList, CListCtrl & pToList)
 				break;
 			}
 		}
+		int i= m_list1.GetItemCount();
         if(left_has==1)   //find
 		{
 			/*
@@ -1262,6 +1264,7 @@ void CSelectionDlg:: DoRandomStuff(void)
 				 break;
 			    }
 		       }
+			  int j = m_list2.GetItemCount();
 		      // ok, user have the goods to be added 
 		      if(exist)   //add to existing goods
 		      {
